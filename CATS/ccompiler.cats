@@ -20,7 +20,7 @@ void print_compiler_version(void) {
 
   printf("compiled with icc version: %d.%d\n", icc_major, icc_minor);
 }
-#elif definfed(__PGIC__)
+#elif defined(__PGIC__)
 void print_compiler_version(void) {
   prinf("compiled with pgcc version: %d.%d.%d\n", __PGIC__, __PGIC_MINOR,
         __PGIC_PATCHLEVEL__);
